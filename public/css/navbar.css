@@ -1,0 +1,132 @@
+*{
+    font-family: 'Anek Telugu';
+}
+header{
+    z-index: 99;
+}
+/* .navbar{
+    display: flex;
+    flex-direction: column;
+} */
+
+#nvbr{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #955246; */
+    /* background-color: #782b27; */
+    background-color: #631818;
+    /* position: sticky; */
+    top: 0;
+    /* box-shadow: 1px 1px 3px rgba(0,0,0,0.5); */
+}
+
+#nvbr li{
+    float:left;
+    /* border-right: 1px solid #bbb; */
+}
+.left{
+    float:right;
+}
+#nvbr li img{
+    float:left;
+    margin-right:-10px;
+    width: 28%;
+    margin-top: -2px;
+}
+/* #nvbr li:last-child{
+    border-right: none;
+} */
+#nvbr li a, .dbutton{
+    display: block;
+    /* color:#342F09; */
+    /* color: #fff2df; */
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+#nvbr li a:hover, .dropdown:hover .dbutton{
+    background-color: #eb9482;
+}
+#nvbr li.dropdown{
+    display: inline-block;
+}
+#nvbr li a:active{
+    background-color: #eb9482;
+    color:white;
+}
+#nvbr li.right{
+    float: left;
+}
+/* nav li:not(:first-child):before{
+    content: " | ";
+}
+nav li:last-child:before{
+    content: none;
+} */
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+#logo{
+    text-decoration: none;
+    width: 100%;
+}
+.highlight{
+    background-color: #c9190f;
+}
+.drop-content{
+    display: none;
+    position: absolute;
+    background-color: #f2f1d0;
+    color: #631818;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    float: none;
+}
+.drop-content a{
+    /* color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.drop-content #colo{
+    color: #631818;
+}
+.drop-content a#colo:hover{
+    color: #fbf9f9;
+}
+.drop-content a:hover{
+    background-color: #f1f1f1;
+}
+.dropdown:hover .drop-content{
+    display: block;
+}
+@media screen and (max-width: 600px) {
+    #nvbr li.right,
+    #nvbr li,
+    .left{
+        float: none;
+    }
+    #nvbr li img{
+        float:none;
+        display:none;
+        margin-right:-10px;
+        width: 25%;
+        margin-top: -2px;
+    }
+    #nvbr li.dropdown{
+        display: block;
+        width: 100%;
+    }
+    .drop-content{
+        width: 100%;
+    }
+    
+}

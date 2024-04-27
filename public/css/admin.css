@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: 'Anek Telugu',Arial, Helvetica, sans-serif;
+}
+table{
+    border: 1px solid black;
+}
+td{
+    width: 100px;
+    border: 1px solid black;
+    border-collapse: separate;
+    margin: 0;
+}
+.alert{
+    background-color: cadetblue;
+}
